@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>テスト問題システム</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>テスト問題システム</h1>
+      <p class="description">各問題に点数が設定された選択式テストです。送信後に得点が自動計算されます。</p>
+
+      <section id="alreadyAnswered" class="card hidden" aria-live="polite">
+        <h2>回答済みです</h2>
+        <p>この端末では既に回答済みのため、再回答はできません。</p>
+        <p id="savedScore"></p>
+      </section>
+
+      <form id="quizForm" class="card"></form>
+
+      <section id="result" class="card hidden" aria-live="polite"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
